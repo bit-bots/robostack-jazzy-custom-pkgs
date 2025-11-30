@@ -91,3 +91,141 @@ bonxai:
   rev: cae52f1affcc9ff2c0da59b712927a04608b660b
   url: https://github.com/facontidavide/Bonxai.git
   version: 0.7.0
+
+
+# Bit-Bots specific packages
+audio_common:
+  rev: c1770559877889c3da0dc5826e2b8f55f3752e0b
+  url: https://github.com/bit-bots/audio_common.git
+  version: 0.3.12
+  additional_folder: audio_common
+audio_common_msgs:
+  rev: c1770559877889c3da0dc5826e2b8f55f3752e0b
+  url: https://github.com/bit-bots/audio_common.git
+  version: 0.3.12
+  additional_folder: audio_common_msgs
+audio_capture:
+  rev: c1770559877889c3da0dc5826e2b8f55f3752e0b
+  url: https://github.com/bit-bots/audio_common.git
+  version: 0.3.12
+  additional_folder: audio_capture
+audio_play:
+  rev: c1770559877889c3da0dc5826e2b8f55f3752e0b
+  url: https://github.com/bit-bots/audio_common.git
+  version: 0.3.12
+  additional_folder: audio_play
+
+bio_ik:
+  rev: ffec29f7aebb16a9ae67667db4a29d375046c23b
+  url: https://github.com/bit-bots/bio_ik.git
+  version: 2.0.0
+bio_ik_msgs:
+  rev: b0d1b5e46a55d5f52e5bc7c5405014ca29626b90
+  url: https://github.com/bit-bots/bio_ik_msgs.git
+  version: 0.0.0
+  additional_folder: bio_ik_msgs
+
+biped_interfaces:
+  rev: 5966d7813db77859759cca9d7e8075597551fc27
+  url: https://github.com/ros-sports/biped_interfaces.git
+  version: 0.0.0
+
+bitbots_tf_buffer:
+  rev: 9ddce3f7f7434f762dd3d9ea8db85292eeca9d86
+  url: https://github.com/bit-bots/bitbots_tf_buffer.git
+  version: 1.0.0
+ros2_python_extension:
+  rev: c5a8446e997871f9d720d643b7a60448f89da363
+  url: https://github.com/bit-bots/ros2_python_extension.git
+  version: 1.0.0
+  additional_folder: ros2_python_extension
+
+dynamic_stack_decider:
+  rev: aa895fe01ecd50b6a01a2292ce1e825e9ab58e6a
+  url: https://github.com/bit-bots/dynamic_stack_decider.git
+  version: 0.5.3
+  additional_folder: dynamic_stack_decider
+dynamic_stack_decider_visualization:
+  rev: aa895fe01ecd50b6a01a2292ce1e825e9ab58e6a
+  url: https://github.com/bit-bots/dynamic_stack_decider.git
+  version: 0.2.1
+  additional_folder: dynamic_stack_decider_visualization
+
+bitbots_dynamixel_sdk:
+  rev: 95b31bd6b92160365b27012fdb20cd6788eb84b0
+  url: https://github.com/bit-bots/DynamixelSDK.git
+  version: 3.7.21
+  additional_folder: ros
+dynamixel_workbench_toolbox:
+  rev: 17cb5425316f0160e0cfff905c68d062de49962f
+  url: https://github.com/bit-bots/dynamixel-workbench.git
+  version: 0.1.8
+  additional_folder: dynamixel_workbench_toolbox
+
+game_controller_hl:
+  rev: 7a923bb51f8ee23caec748cc8990ae9ef398882c
+  url: https://github.com/ros-sports/game_controller_hl.git
+  version: 1.1.0
+  additional_folder: game_controller_hl
+game_controller_hl_interfaces:
+  rev: 7a923bb51f8ee23caec748cc8990ae9ef398882c
+  url: https://github.com/ros-sports/game_controller_hl.git
+  version: 0.0.1
+  additional_folder: game_controller_hl_interfaces
+
+hlvs_player:
+  rev: edfc254c401dd88a25927cabd71b7f0f54aac1a2
+  url: https://github.com/Flova/hlvs_player.git
+  version: 0.1.0
+
+humanoid_base_footprint:
+  rev: 8930ff89dd1ca5b75bfa896c5b5ca4b313d64c79
+  url: https://github.com/ros-sports/humanoid_base_footprint.git
+  version: 0.1.2
+
+ipm_image_node:
+  rev: 70eb7e9f1aa4ad93e24512b74215b0d908150ab7
+  url: https://github.com/ros-sports/ipm.git
+  version: 0.0.0
+  additional_folder: ipm_image_node
+ipm_interfaces:
+  rev: 70eb7e9f1aa4ad93e24512b74215b0d908150ab7
+  url: https://github.com/ros-sports/ipm.git
+  version: 0.0.0
+  additional_folder: ipm_interfaces
+ipm_library:
+  rev: 70eb7e9f1aa4ad93e24512b74215b0d908150ab7
+  url: https://github.com/ros-sports/ipm.git
+  version: 0.0.0
+  additional_folder: ipm_library
+soccer_ipm:
+  rev: 59856ec9f5cace172d08df66530ef1dd67d587bd
+  url: https://github.com/ros-sports/soccer_ipm.git
+  version: 0.0.0
+  additional_folder: soccer_ipm
+
+particle_filter:
+  rev: c86260048bb951e65393fe4773482ed8156d9c0e
+  url: https://github.com/bit-bots/particle_filter.git
+  version: 0.0.1
+
+ros2_numpy:
+  rev: bda47484905a4c6bc30405c8ce020b5ac630c93f
+  url: https://github.com/bit-bots/ros2_numpy.git
+  version: 2.0.9
+
+soccer_field_map_generator:
+  rev: 17e8f8addeb20b5ab1601a980a3f3f38011c72dc
+  url: https://github.com/ros-sports/soccer_field_map_generator.git
+  version: 0.0.0
+  additional_folder: soccer_field_map_generator
+
+udp_bridge:
+  rev: b89512ebd4af994d933236d21ae40050da9c829e
+  url: https://github.com/bit-bots/udp_bridge.git
+  version: 0.0.0
+
+better_launch:
+  rev: bbb904c9df8a2110329e25b97b89951c9dc2c80d
+  url: https://github.com/dfki-ric/better_launch.git
+  version: 1.0.4

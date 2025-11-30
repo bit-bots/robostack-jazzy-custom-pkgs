@@ -260,3 +260,10 @@ livox_ros_driver2:
   add_host: ["livox-sdk2"]
 moveit2_tutorials:
   add_host: ["REQUIRE_OPENGL"]
+
+dynamixel_workbench_toolbox:
+  add_host: ["ros-jazzy-bitbots-dynamixel-sdk"]
+ 
+better_launch:
+  add_host: ["setproctitle", "osrf_pycommon", "docstring_parser"]
+  add_run: ["setproctitle", "osrf_pycommon", "docstring_parser"]

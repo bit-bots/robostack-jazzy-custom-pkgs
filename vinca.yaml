@@ -44,161 +44,41 @@ skip_existing:
   - https://conda.anaconda.org/robostack-jazzy/
 
 packages_select_by_deps:
-  - ament_cmake_core
-  - ament_cmake_catch2
-  - ament_cmake_mypy
+  # Bit-Bots specific pkgs that are available in ros2-gbp but not in the robostack-jazzy channel
+  - imu_complementary_filter
+  - soccer_vision_attribute_msgs
+  - soccer_vision_3d_msgs
+  - rviz_imu_plugin
+  - rot_conv
+  - gazebo_msgs
 
-  - desktop
-  - ros_base
-  - ros_environment
-  - ros_workspace
-  - dev_tools
-  - diagnostics
-  - teleop
-  - robot
-  - perception
-  - navigation2
-  - simulation
-  - desktop_full
-
-  - moveit
-  - moveit-planners-chomp
-  - moveit-ros-trajectory-cache
-  - moveit-servo
-  - moveit-visual-tools
-
-  - ros2_control
-  - ros2_controllers
-  - gz_ros2_control
-  - gz_ros2_control_demos
-
-  - rviz_visual_tools
-
-  - ur
-  - ur_simulation_gz
-
-  - ros_gz
-  - slam_toolbox
-  - turtlebot3
-  - turtlebot3_simulations
-
-  - ackermann-msgs
-  - sbg_driver
-
-  # requested in https://github.com/RoboStack/ros-humble/issues/249
-  - twist_mux
-
-  # requested in https://github.com/RoboStack/ros-humble/issues/252
-  - rmw_zenoh_cpp
-
-  - flex_sync
-  - gripper_controllers
-
-  - rosbridge_suite
-
-  - foxglove_bridge
-  - foxglove_msgs
-
-  - lanelet2
-
-  - ublox
-
-  - can_msgs
-  - ros2_socketcan_msgs
-
-  - nav2_bringup
-
-  - autoware_internal_msgs
-  - autoware_common_msgs
-  - autoware_control_msgs
-  - autoware_localization_msgs
-  - autoware_map_msgs
-  - autoware_perception_msgs
-  - autoware_planning_msgs
-  - autoware_sensing_msgs
-  - autoware_system_msgs
-  - autoware_v2x_msgs
-  - autoware_vehicle_msgs
-  - autoware_cmake
-  - autoware_utils
-
-  - apriltag_detector
-
-  - apriltag_detector_umich
-
-  - apriltag_detector_mit
-  - apriltag_draw
-  - apriltag_tools
-
-  - ament_cmake_black
-
-  - behaviortree_cpp
-  - ouster_ros
-
-  # cascade lifecycle packages
-  - cascade-lifecycle-msgs
-  - rclcpp-cascade-lifecycle
-  - rclpy-cascade-lifecycle
-
-  - py_binding_tools
-
-  # Requested in https://github.com/RoboStack/ros-humble/issues/325
-  - data_tamer_cpp
-
-  - point_cloud_transport_py
-
-  # These packages are only built on Windows as they depend on Linux-specific API
-  - if: linux
-    then:
-      # Depends on socketcan
-      - ros2_socketcan
-      # Depends on v4l
-      - usb_cam
-      # Depends (indirectly) on libcamera
-      - apriltag_ros
-
-  # These packages are currently only build on Linux, but they currently only build on
-  # Linux as trying to build them in the past on macos or Windows resulted in errors
-  - if: linux
-    then:
-      - livox_ros_driver2
-      - orbbec_camera
-
-  # These packages are currently not build on Windows, but they be with some work
-  - if: not win
-    then:
-      - plotjuggler-ros
-      - foxglove_compressed_video_transport
-      - velodyne
-      - moveit-py
-      - moveit-ros-perception
-      - moveit-ros-occupancy-map-monitor
-      - moveit-runtime
-      - moveit-task-constructor-demo
-      - moveit2-tutorials
-      - pinocchio
-      # todo: switch to dummy vendored package that just depends on the conda-forge's gtsam, so it works also on Windows
-      - gtsam
-      # TODO on windows: fix iconv link issue
-      - ffmpeg_image_transport
-      # most of the dep of grid_map work on Windows, but there are some rviz linking problems in octomap_rviz_plugins, 
-      # see https://github.com/RoboStack/ros-jazzy/pull/79#issuecomment-2993499990
-      - grid_map
-      - dual-laser-merger
-      - pointcloud-to-laserscan
-      - laser-segmentation
-      - rqt_tf_tree
-      - rviz_satellite
-      - odom_to_tf_ros2
-      # Requested in https://github.com/RoboStack/ros-jazzy/issues/99
-      # error C2338: static_assert failed: 'the Header struct is not properly packed' error on Windows
-      - web_video_server
-      - orbbec_description
-      - orbbec_camera_msgs
-      # Requested in https://github.com/RoboStack/ros-jazzy/issues/112
-      # Error: LINK : fatal error LNK1181: cannot open input file 'zstd.lib' [%SRC_DIR%\build\zstd_point_cloud_transport.vcxproj]
-      - point_cloud_transport_plugins
-      - bonxai
+  # Bit-Bots specific packages that need to be built from source
+  - audio_common
+  - audio_common_msgs
+  - audio_capture
+  - audio_play
+  - bio_ik
+  - bio_ik_msgs
+  - biped_interfaces
+  - bitbots_tf_buffer
+  - ros2_python_extensions
+  - dynamic_stack_decider
+  - dynamic_stack_decider_visualization
+  - bitbots_dynamixel_sdk
+  - dynamixel_workbench_toolbox
+  - game_controller_hl
+  - game_controller_hl_interfaces
+  #- hlvs_player
+  - humanoid_base_footprint
+  - ipm_image_node
+  - ipm_interfaces
+  - ipm_library
+  - soccer_ipm
+  - particle_filter
+  - ros2_numpy
+  - soccer_field_map_generator
+  - udp_bridge
+  - better_launch
 
 patch_dir: patch
 rosdistro_snapshot: rosdistro_snapshot.yaml
