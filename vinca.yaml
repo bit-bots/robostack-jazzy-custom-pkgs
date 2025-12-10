@@ -48,6 +48,7 @@ packages_select_by_deps:
   - imu_complementary_filter
   - soccer_vision_attribute_msgs
   - soccer_vision_3d_msgs
+  - soccer_vision_3d_rviz_markers
   - rviz_imu_plugin
   - rot_conv
   - gazebo_msgs
