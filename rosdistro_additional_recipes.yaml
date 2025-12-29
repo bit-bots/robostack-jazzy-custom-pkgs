@@ -97,22 +97,22 @@ bonxai:
 audio_common:
   rev: c1770559877889c3da0dc5826e2b8f55f3752e0b
   url: https://github.com/bit-bots/audio_common.git
-  version: 0.3.12
+  version: 0.3.15
   additional_folder: audio_common
 audio_common_msgs:
   rev: c1770559877889c3da0dc5826e2b8f55f3752e0b
   url: https://github.com/bit-bots/audio_common.git
-  version: 0.3.12
+  version: 0.3.15
   additional_folder: audio_common_msgs
 audio_capture:
   rev: c1770559877889c3da0dc5826e2b8f55f3752e0b
   url: https://github.com/bit-bots/audio_common.git
-  version: 0.3.12
+  version: 0.3.15
   additional_folder: audio_capture
 audio_play:
   rev: c1770559877889c3da0dc5826e2b8f55f3752e0b
   url: https://github.com/bit-bots/audio_common.git
-  version: 0.3.12
+  version: 0.3.15
   additional_folder: audio_play
 
 bio_ik:

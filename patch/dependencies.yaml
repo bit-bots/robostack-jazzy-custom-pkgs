@@ -267,3 +267,11 @@ dynamixel_workbench_toolbox:
 better_launch:
   add_host: ["setproctitle", "osrf_pycommon", "docstring_parser"]
   add_run: ["setproctitle", "osrf_pycommon", "docstring_parser"]
+
+audio_capture:
+  add_host: ["gstreamer 1.24.*"]
+  add_run: ["gstreamer 1.24.*"]
+
+audio_play:
+  add_host: ["gstreamer 1.24.*"]
+  add_run: ["gstreamer 1.24.*"]
