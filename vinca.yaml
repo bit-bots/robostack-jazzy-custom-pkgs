@@ -51,6 +51,8 @@ packages_select_by_deps:
   #- rviz_imu_plugin
   - rot_conv
   - gazebo_msgs
+  - realsense2_camera
+
 
   # Bit-Bots specific packages that need to be built from source
   - audio_common
