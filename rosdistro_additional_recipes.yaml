@@ -162,14 +162,14 @@ dynamixel_workbench_toolbox:
   additional_folder: dynamixel_workbench_toolbox
 
 game_controller_hl:
-  rev: 7a923bb51f8ee23caec748cc8990ae9ef398882c
-  url: https://github.com/ros-sports/game_controller_hl.git
-  version: 1.1.0
+  rev: ceda7a752f4f570c14bacd069f728f1260881ea6
+  url: https://github.com/bit-bots/game_controller_hsl.git
+  version: 2.0.0
   additional_folder: game_controller_hl
 game_controller_hl_interfaces:
-  rev: 7a923bb51f8ee23caec748cc8990ae9ef398882c
-  url: https://github.com/ros-sports/game_controller_hl.git
-  version: 0.0.1
+  rev: ceda7a752f4f570c14bacd069f728f1260881ea6
+  url: https://github.com/bit-bots/game_controller_hsl.git
+  version: 2.0.0
   additional_folder: game_controller_hl_interfaces
 
 hlvs_player:
